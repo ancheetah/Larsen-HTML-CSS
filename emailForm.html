@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Cafe: Contact Us</title>
+</head>
+<body>
+
+	<img src="..\Larson-code\code\c04\sample_application\images\logo.gif" alt="example cafe logo" width=194 height=80>
+
+	<h1>Contact Us</h1>
+	<p>Use the following form to send a message to Example Cafe</p>
+
+	<table>
+		<caption></caption>
+		<tr>
+			<td>Your email:</td>
+			<td><input type="email" name="txtFrom" id="emailFrom" maxlength="250" size="20"></td>
+		</tr>
+		<tr>
+			<td>Message:</td>
+			<td><textarea name="txtBody" id="emailBody" rows="10" cols="50">Enter your message here.</textarea></td>
+		</tr>
+		<tr>
+			<td>How did you hear about the Example Cafe?</td>
+			<td><select name="selReferredBy">
+				<option selected="selected" value="">Select</option>
+				<option value="newspaper">Newspaper</option>
+				<option value="website">Website</option>
+				<option value="ad">Ad</option>
+				<option value="other">Other</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>Newsletter</td>
+			<td><input type="checkbox" name="chkBody" id="newsletterSignup" checked>Check this box to subscribe to our newsletter</td>
+		</tr>
+	</table>
+
+	<p><input type="submit" value="Send message"></p>
+
+</body>
+</html>
