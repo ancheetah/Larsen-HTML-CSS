@@ -29,7 +29,10 @@ a:active {
 	list-style-type: circle;
 }
 
-ul ul {
+ul ul { /* descendent selector uses space combinator */
 	list-style-type: square;
 }
+
+/* li a {} will not work because <a> element cannot have list properties assigned to it */
+
 
