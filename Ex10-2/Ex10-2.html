@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Larsen Ex 10-2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var date = new Date(); 
+		var time = date.getHours(); 
+		//time=19;
+
+		if ( time < 12 ) {
+		  document.body.innerHTML += '<h1>Good Morning</h1>'; 
+		}
+		else if ( time >= 12 & time < 18 ){
+		  document.body.innerHTML += '<h1>Good Afternoon</h1>'; 
+		}
+		else { document.body.innerHTML += '<h1>Good Evening</h1>' }
+
+		document.body.innerHTML += "<p>" + "The current time is " + date.getHours() + ":" + date.getMinutes() + "<p>"
+	</script>
+</body>
+</html>
