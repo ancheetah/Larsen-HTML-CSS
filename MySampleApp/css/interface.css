@@ -1,0 +1,41 @@
+/* Style sheet for Example Cafe */
+
+body{
+	font-family: arial, veranda, sans-serif;
+}
+
+h2{
+	font-family: georgia, times, serif;
+	color: #666666;
+}
+
+p{
+	font-size: 90%;
+	color: #333333;
+	line-height: 1.3em;
+}
+
+#navigation a {
+	color:#3399cc;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+
+#navigation{
+	border-top: 1px solid #ababab;
+	border-bottom: 1px solid #ababab;
+	margin: 20px 0px 20px 0px;
+	padding: 10px 0px 10px 0px;
+}
+
+#page{
+	padding: 40px;
+	margin: 20px;
+	border: 5px solid #3399cc;
+}
+
+.main_image{
+	border: 1px solid #000000;
+	margin: 0px 10px 10px 0px;
+}

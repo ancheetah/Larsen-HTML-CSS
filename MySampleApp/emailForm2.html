@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Cafe: Contact Us</title>
+
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/interface.css">
+</head>
+<body>
+
+	<img src="..\Larson-code\code\c04\sample_application\images\logo.gif" alt="example cafe logo" width=194 height=80>
+
+	 <nav id="navigation">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="opening.html">Hours</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+	<h1>Contact Us</h1>
+	<!-- <p>Use the following form to send a message to Example Cafe</p> -->
+
+	<form action="contact.aspx" method="post" name="frmRespondToAd">
+		<fieldset>
+			<legend>Your message:</legend>
+			<table>
+				<caption></caption>
+
+				<tr>
+					<td><label for="emailTo">To:</label></td>
+					<td><input type="text" name="txtTo" value="Example Cafe" id="emailTo" size="20" tabindex="1" readonly>
+					<!-- Here the "value" attribute is used to provide the read-only text in the form control. This is more appropriate than "placeholder" attribute which is meant to provide a hint of the type of input a user should enter. 
+					Although this is a read only control, if you don't set the tabindex to 1 then pressing tab will cycle through "emailFrom" then "emailBody" then back to "emailTo" instead of the rest of the form because the rest of the elements (including the url address bar) have tabindex="0" and are cycled through in the order they appear in your code. -->
+				</tr>
+
+				<tr>
+					<td><label for="emailFrom">Your email:</label></td>
+					<td><input type="email" name="txtFrom" id="emailFrom" maxlength="250" size="20" tabindex="1"></td>
+				</tr>
+
+				<tr>
+					<td><label for="emailBody">Message:</label></td>
+					<td><textarea name="txtBody" id="emailBody" rows="10" cols="50" tabindex="2"></textarea></td>
+				</tr>
+
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<legend>How you found us:</legend>
+			<table>
+				<caption></caption>
+				
+				<tr>
+					<td><label for="refOption">How did you hear about the Example Cafe?</label></td>
+					<td><select name="selReferredBy" id="refOption">
+						<option selected="selected" value="">Select</option>
+						<option value="newspaper">Newspaper</option>
+						<option value="website">Website</option>
+						<option value="ad">Ad</option>
+						<option value="other">Other</option>
+					</select></td>
+				</tr>
+
+				<tr>
+					<td><label for="newsletterSignup">Newsletter</label></td>
+					<td><input type="checkbox" name="chkBody" id="newsletterSignup" checked>Check this box to subscribe to our newsletter</td>
+				</tr>
+
+			</table>
+		</fieldset>
+
+		<p><input type="submit" value="Send message"></p>
+	</form>
+
+</body>
+</html>
