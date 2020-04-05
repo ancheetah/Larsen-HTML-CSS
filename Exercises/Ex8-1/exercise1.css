@@ -1,0 +1,38 @@
+/* exercise1 style sheet */
+
+body {
+	background-color: #ffffff;
+	font-family: arial, veranda, sans-serif;
+	font-size: 12px;
+}
+
+a:link {
+	color: #39619c;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #173362;
+	text-decoration: none;
+}
+
+a:active {
+	color: #fe687f;
+	text-decoration: none;
+}
+
+#contents {
+	font-weight: bold;
+	background-color: #d2f1e4;
+	padding-left: 3em;
+	width: 250px;
+	list-style-type: circle;
+}
+
+ul ul { /* descendent selector uses space combinator */
+	list-style-type: square;
+}
+
+/* li a {} will not work because <a> element cannot have list properties assigned to it */
+
+

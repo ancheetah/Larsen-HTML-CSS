@@ -1,0 +1,36 @@
+<!-- Larsen Exercise 6-1 -->
+
+<!doctype html>
+<html>
+
+	<head>
+		<title>Reply to ad</title>
+		<meta charset="utf-8" >
+		<!--[if lt IE 9]>
+  			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  			<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<h1>Reply to ad</h1>
+		<p>Use the following form to respond to the ad:</p>
+
+		<!-- <form action="" method="post" name=frmRelpyToAd> -->
+			<p><label for="emailTo">To</label><br>
+			<input type="text" name="txtTo" id="emailTo" value="Star Seller" readonly size="20" tabindex="1"></p>
+
+			<p><label for="emailFrom">From</label><br>
+			<input type="text" name="txtFrom" id="emailFrom" size="20" tabindex="2"></p>
+
+			<p><label for="emailSubj">Subject</label><br>
+			<input type="text" name="txtSubject" id="emailSubj" size="40" tabindex="3"></p>
+
+			<p><label for="emailBody">Body</label><br>
+			<textarea name="txtBody" id="emailBody" rows="10" cols="50" tabindex="4"></textarea></p>
+		<!-- </form> -->
+
+		<p><input type="submit" name="btnSend" value="Send email" tabindex="5"></p>
+	</body>
+
+</html>
